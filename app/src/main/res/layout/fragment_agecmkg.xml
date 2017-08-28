@@ -1,0 +1,125 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+
+              android:orientation="vertical"
+              android:background="@mipmap/login_bg"
+              android:paddingBottom="@dimen/activity_vertical_margin"
+              android:paddingLeft="@dimen/activity_horizontal_margin"
+              android:paddingRight="@dimen/activity_horizontal_margin"
+              android:paddingTop="@dimen/activity_vertical_margin"
+              tools:context="com.example.cleverlin.cate.activity.LoginActivity">
+
+
+    <TextView
+        android:layout_marginTop="170dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/writePerInfo"
+        android:textSize="20sp"
+        />
+
+    <LinearLayout
+
+        android:layout_centerVertical="true"
+        android:id="@+id/email_login_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <android.support.design.widget.TextInputLayout
+
+            android:layout_width="60dp"
+            android:layout_height="wrap_content">
+
+            <AutoCompleteTextView
+                android:gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/register_age"
+                android:textSize="15sp"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:hint="@string/age"
+                android:textColorHint="#CCCCCC"
+                android:maxLines="1"/>
+
+        </android.support.design.widget.TextInputLayout>
+        <TextView
+
+            android:textColor="#443C33"
+            android:gravity="center"
+            android:text="岁"
+            android:layout_width="58dp"
+            android:layout_height="match_parent"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:textSize="15sp"
+                android:id="@+id/register_height"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/height"
+                android:maxLines="1"
+                android:singleLine="true"/>
+
+
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:textColor="#443C33"
+            android:gravity="center"
+            android:text="cm"
+            android:layout_width="58dp"
+            android:layout_height="match_parent"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:textSize="15sp"
+                android:id="@+id/register_weight"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/weight"
+                android:maxLines="1"
+                android:singleLine="true"/>
+
+
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:textColor="#443C33"
+            android:gravity="center"
+            android:text="kg"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"/>
+
+
+    </LinearLayout>
+
+        <RelativeLayout
+
+            android:layout_marginTop="46dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </RelativeLayout>
+
+    <Button
+        android:id="@+id/register_finish"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:background="@mipmap/suggest_select"
+        android:text="完成"
+        android:layout_gravity="center"
+        android:layout_below="@+id/email_login_form"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="73dp"/>
+
+
+</RelativeLayout>

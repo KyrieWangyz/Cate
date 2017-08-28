@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Cate</string>
+
+    <!-- Strings related to login -->
+    <string name="username">用户名</string>
+    <string name="password">密码</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="choseGender">请选择性别</string>
+    <string name="writeInfo">请输入账户信息</string>
+    <string name="writePerInfo">请输入个人信息</string>
+    <string name="age">年龄</string>
+    <string name="height">身高</string>
+    <string name="weight">体重</string>
+    <string name="suggest_menu">建议食谱</string>
+    <string name="change_calorie">修改热量</string>
+    <string name="calculator_calorie">热量计算器</string>
+    <string name="record_eat">记录饮食</string>
+    <string name="yesterdayTakein">昨日摄入</string>
+    <string name="weekTakein">本周摄入</string>
+    <string name="history_search">历史搜索</string>
+    <string name="clearhistory">清除历史记录</string>
+    <string name="hotsearch">热门搜索</string>
+    <string name="search">搜索</string>
+    <string name="hintText">请输入已有食材</string>
+    <string name="breakfast">早餐</string>
+    <string name="lunch">午餐</string>
+    <string name="dinner">晚餐</string>
+</resources>

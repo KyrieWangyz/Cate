@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+<LinearLayout
+    android:background="@color/colorWhite"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+    <ImageButton
+        android:id="@+id/returnAct"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorWhite"
+        android:src="@mipmap/nav_return"
+        android:layout_width="40dp"
+        android:layout_height="40dp"/>
+    <FrameLayout
+        android:layout_marginTop="5dp"
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <com.example.cleverlin.cate.view.SliderLayout
+
+            android:id="@+id/slider"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </com.example.cleverlin.cate.view.SliderLayout>
+        <android.support.design.widget.TabLayout
+
+            android:id="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            app:tabGravity="fill"
+            app:tabIndicatorColor="#00000000"
+
+            app:tabMode="fixed"
+            app:tabSelectedTextColor="@color/colorText"
+            app:tabTextColor="@color/colorText">
+        </android.support.design.widget.TabLayout>
+
+    </FrameLayout>
+</LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/record_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v4.view.ViewPager>
+</LinearLayout>

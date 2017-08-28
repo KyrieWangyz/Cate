@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="152dp"
+              android:layout_height="200dp">
+
+    <com.example.cleverlin.cate.imageloader.RoundImageView
+        android:id="@+id/foodphoto"
+        android:layout_width="152dp"
+        android:layout_height="152dp"/>
+
+    <TextView
+        android:layout_marginTop="4dp"
+        android:textColor="#443C33"
+        android:textSize="13sp"
+        android:id="@+id/foodname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="杏子馅饼"
+        />
+    <LinearLayout
+        android:layout_marginTop="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="难度"
+            android:textSize="11sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.example.cleverlin.cate.other.RatingBar
+            android:id="@+id/star"
+            android:paddingTop="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+android:layout_marginLeft="2dp"
+            app:starCount="5"
+            app:starEmpty="@mipmap/recipe_icon_star_not"
+            app:starFill="@mipmap/recipe_icon_star"
+            app:starHalf="@mipmap/recipe_icon_star_half"
+            app:starImageSize="9dp"
+            app:starPadding="1dp"
+            app:starStep="2.5"
+            app:stepSize="Half">
+
+        </com.example.cleverlin.cate.other.RatingBar>
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_marginLeft="10dp"
+            android:text="需要60分钟"
+            android:textSize="11sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</LinearLayout>
