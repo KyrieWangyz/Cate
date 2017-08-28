@@ -33,4 +33,7 @@
     <string name="breakfast">早餐</string>
     <string name="lunch">午餐</string>
     <string name="dinner">晚餐</string>
+    <string name="number">数量</string>
+    <string name="unit">单位</string>
+    <string name="addto">添加到</string>
 </resources>

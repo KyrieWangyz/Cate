@@ -22,6 +22,7 @@ import android.widget.Toast;
 
 import com.example.cleverlin.cate.R;
 import com.example.cleverlin.cate.activity.EveRecommend;
+import com.example.cleverlin.cate.activity.PersonActivity;
 import com.example.cleverlin.cate.activity.RecordActivity;
 import com.example.cleverlin.cate.activity.SearchActivity;
 import com.example.cleverlin.cate.adapter.viewholder.ArticleAdapter;
@@ -177,10 +178,10 @@ public class HomeFragment extends Fragment implements ArticleContract.View {
                 toActivity(SearchActivity.class);
                 break;
             case R.id.personalBtn:
-                toActivity(RecordActivity.class);
+                toActivity(PersonActivity.class);
                 break;
             case R.id.personalTvw:
-                toActivity(RecordActivity.class);
+                toActivity(PersonActivity.class);
                 break;
         }
     }

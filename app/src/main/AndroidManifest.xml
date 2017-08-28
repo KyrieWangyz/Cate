@@ -44,9 +44,11 @@
         </activity>
         <activity android:name=".activity.PersonActivity">
         </activity>
-        <activity android:name=".activity.RecordActivity"
-            android:theme="@style/AppTheme.Record"
-            >
+        <activity
+            android:name=".activity.RecordActivity"
+            android:theme="@style/AppTheme.Record">
+        </activity>
+        <activity android:name=".activity.SingleSearchActivity">
         </activity>
     </application>
 
