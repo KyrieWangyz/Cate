@@ -10,6 +10,7 @@ import android.widget.TextView;
 
 import com.example.cleverlin.cate.R;
 import com.example.cleverlin.cate.bean.ResultBean;
+import com.example.cleverlin.cate.imageloader.ImageLoader;
 
 import java.util.List;
 
@@ -41,7 +42,8 @@ public class SearchResultAdapter extends RecyclerView.Adapter<SearchResultAdapte
     public void onBindViewHolder(ViewHolder holder, int position) {
         ResultBean resultBean=mDatas.get(position);
         holder.foodName.setText(resultBean.getName());
-//        ImageLoader.load();
+        ImageLoader.load(resultBean.getImg(),holder.foodIcon);
+        holder.material.setText(resultBean.getMaterial());
     }
 
     @Override

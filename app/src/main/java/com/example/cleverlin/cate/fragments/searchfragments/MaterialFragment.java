@@ -11,6 +11,7 @@ import android.support.v7.widget.RecyclerView;
 import android.text.Editable;
 import android.text.TextUtils;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -153,6 +154,7 @@ public class MaterialFragment extends Fragment {
                 public void onClick(View v) {
                     //加入搜索历史纪录记录
                     Toast.makeText(getActivity(), str, Toast.LENGTH_LONG).show();
+                    searchInput.setText(str);
                 }
             });
             flowlayout.addView(tv);
@@ -183,7 +185,10 @@ public class MaterialFragment extends Fragment {
         recycleHint.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Toast.makeText(getActivity(), hintString.get(i), Toast.LENGTH_SHORT).show();
+                searchInput.setText(hintString.get(i));
+                onSearch();
+                save();
+                change=false;
             }
         });
     }
@@ -252,9 +257,7 @@ public class MaterialFragment extends Fragment {
         }
     }
 
-//    @OnClick(R.id.clear_history)
-//    public void onViewClicked() {
-//    }
+
 
     private class EditChangedListener implements TextWatcher {
 

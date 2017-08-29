@@ -50,7 +50,7 @@
     <ListView
         android:id="@+id/recycle_hint"
         android:layout_width="260dp"
-        android:layout_height="200dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:layout_marginLeft="40dp"
         android:background="@color/colorMain"
