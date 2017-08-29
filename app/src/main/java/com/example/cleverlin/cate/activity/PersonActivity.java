@@ -58,8 +58,11 @@ public class PersonActivity extends Activity {
     }
 
     private void initProgress() {
+        yesterdayCalorie.setmCircleLineStrokeWidth(38);
         yesterdayCalorie.setProgress(5,false);
+        todayCalorie.setmCircleLineStrokeWidth(38);
         todayCalorie.setProgress(20,true);
+        weekCalorie.setmCircleLineStrokeWidth(38);
         weekCalorie.setProgress(45,false);
     }
 

@@ -25,10 +25,10 @@
             />
         <com.example.cleverlin.cate.view.CircleProgressView
             android:id="@+id/yesterday_calorie"
-            android:layout_marginTop="166dp"
-            android:layout_marginLeft="25dp"
-            android:layout_width="80dp"
-            android:layout_height="80dp"/>
+            android:layout_marginTop="160dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="90dp"
+            android:layout_height="90dp"/>
         <TextView
             android:textSize="18sp"
             android:text="今日还可摄入"
@@ -59,10 +59,10 @@
             />
         <com.example.cleverlin.cate.view.CircleProgressView
             android:id="@+id/week_calorie"
-            android:layout_marginTop="166dp"
-            android:layout_marginLeft="270dp"
-            android:layout_width="80dp"
-            android:layout_height="80dp"/>
+            android:layout_marginTop="160dp"
+            android:layout_marginLeft="260dp"
+            android:layout_width="90dp"
+            android:layout_height="90dp"/>
         <TextView
             android:id="@+id/hintText"
             android:gravity="center"

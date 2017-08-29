@@ -16,7 +16,16 @@ import android.view.View;
 public class CircleProgressView extends View {
     private int mMaxProgress=100;
     private int mProgress=30;
-    private final int mCircleLineStrokeWidth=8;
+
+    public int getmCircleLineStrokeWidth() {
+        return mCircleLineStrokeWidth;
+    }
+
+    public void setmCircleLineStrokeWidth(int mCircleLineStrokeWidth) {
+        this.mCircleLineStrokeWidth = mCircleLineStrokeWidth;
+    }
+
+    private int mCircleLineStrokeWidth=8;
     private final int mTxtStrokeWidth=2;
     //画圆所在的矩形区域
     private final RectF mRectF;
@@ -50,10 +59,11 @@ public class CircleProgressView extends View {
         mPaint.setAntiAlias(true);
         mPaint.setColor(Color.rgb(0xe9,0xe9,0xe9));
         canvas.drawColor(Color.TRANSPARENT);
-        mPaint.setStrokeWidth(mCircleLineStrokeWidth+30);
+        mPaint.setStrokeWidth(mCircleLineStrokeWidth);//change
+     //   mPaint.setStrokeWidth(mCircleLineStrokeWidth+30);//change
         mPaint.setStyle(Paint.Style.STROKE);
         //位置
-        mRectF.left=mCircleLineStrokeWidth/2+20;
+        mRectF.left=mCircleLineStrokeWidth/2+20;//change
         mRectF.top=mCircleLineStrokeWidth/2+20;
         mRectF.right=width-mCircleLineStrokeWidth/2-20;
         mRectF.bottom=height-mCircleLineStrokeWidth/2-20;

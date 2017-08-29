@@ -36,4 +36,18 @@
     <string name="number">数量</string>
     <string name="unit">单位</string>
     <string name="addto">添加到</string>
+    <string name="apricot_pie">杏子馅饼</string>
+    <string name="title_activity_detail">DetailActivity</string>
+    <string name="need_time">所需时间</string>
+    <string name="alltime">总时长</string>
+    <string name="cooktime">烹饪时长</string>
+    <string name="bakedtime">烘培时长</string>
+    <string name="stewingtime">静置时长</string>
+    <string name="nutrition">营养成分</string>
+    <string name="calorie">卡路里</string>
+    <string name="protein">蛋白质</string>
+    <string name="carbohydrate">碳水化合物</string>
+    <string name="axunge">脂肪</string>
+    <string name="material">所需食材</string>
+    <string name="detailsteps">详细步骤</string>
 </resources>
